@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Appointment Booking</h1>
+        <form id="appointment-form">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+            
+            <label for="doctor-select">Select Doctor:</label>
+            <select id="doctor-select" name="doctor-select" required>
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Johnson">Dr. Johnson</option>
+                <option value="Dr. Lee">Dr. Lee</option>
+                <option value="Dr. Brown">Dr. Brown</option>
+            </select>
+
+            <label for="appointment-date">Select Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+            
+            <div id="time-slots"></div>
+            <button type="submit">Check Availability</button>
+        </form>
+        
+        <div id="appointment-details">
+            <h2>Appointments</h2>
+            <ul id="appointments-list"></ul>
+        </div>
+
+        <div id="cancel-appointment">
+            <h2>Cancel Appointment</h2>
+            <input type="text" id="appointment-id" placeholder="Enter Appointment ID">
+            <button onclick="cancelAppointment()">Cancel Appointment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

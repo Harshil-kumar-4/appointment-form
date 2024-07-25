@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/564x/19/ab/15/19ab15938f7cf5ffa97e268736d18df6.jpg');
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(141, 141, 141, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #90BE8D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#time-slots {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.time-slot {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #90BE8D;
+    transition: background-color 0.3s ease;
+    border-top: 3px solid rgba(0, 0, 0, 0);
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(128, 128, 128, 0);
+    border-right: 3px solid rgba(128, 128, 128, 0);
+}
+.time-slot:hover{
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+}
+
+.time-slot.available {
+    background-color: #fff;
+    color: #333;
+}
+
+.time-slot.selected {
+    background-color: #90BE8D;
+    color: #fff;
+}
+
+.time-slot.unavailable {
+    background-color: #F2711C;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+#appointment-details, #cancel-appointment {
+    margin-top: 30px;
+}
+
+#appointments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#appointments-list li {
+    background-color: #F5F5F5;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#cancel-appointment h2{
+    color: #F2711C;
+}
+#cancel-appointment button{
+    background-color: #F2711C;
+}
+
+button {
+    padding: 10px;
+    background-color: #90BE8D;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-top: 3px solid rgba(0, 0, 0, 0);
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(128, 128, 128, 0);
+    border-right: 3px solid rgba(128, 128, 128, 0);
+}
+
+button:hover {
+    background-color: #78A375;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+}
